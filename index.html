@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Оберіть тип запису</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #f9f9f9;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+        .logo {
+            max-width: 180px;
+            margin-bottom: 25px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: nowrap;
+        }
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 20px 30px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            background: #2f80ed;
+            transition: background 0.2s ease, transform 0.1s ease;
+            min-width: 260px;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #2568c9;
+            transform: translateY(-2px);
+        }
+        .btn.secondary {
+            background: #27ae60;
+        }
+        .btn.secondary:hover {
+            background: #1e8c4d;
+        }
+        @media (max-width: 700px) {
+            .buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://itmed.org/upload/product/1746133200/file_68149c5f82536.png" alt="Логотип медзакладу">
+        <h1>Оберіть тип запису</h1>
+        <div class="buttons">
+            <a class="btn" href="https://medportal.ua/dnp/clinics/1114" target="_blank">
+                Запис до сімейного лікаря
+            </a>
+            <a class="btn secondary" href="https://medregistry.infomed.ck.ua/#" target="_blank">
+                Запис на прийом до лікаря спеціалізованої медичної допомоги
+            </a>
+        </div>
+    </div>
+</body>
+</html>
